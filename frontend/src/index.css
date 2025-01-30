@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to adjust the base font size */
+:root {
+  font-size: 14px; /* Default is 16px, adjust as needed */
+}
+
+/* In your global CSS file (e.g., styles.css) */
+@keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #f0f0f0;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Chat content area scrolling */
+.chat-content {
+    @apply flex-1 overflow-y-auto hide-scrollbar;
+}
+
+/* Input area scrolling */
+.chat-input-area {
+    @apply overflow-y-auto hide-scrollbar;
+    max-height: 200px;
+}

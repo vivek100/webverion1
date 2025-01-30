@@ -1,0 +1,16 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-dotenv==1.0.0
+supabase==2.0.3
+websockets==12.0
+python-multipart==0.0.6
+pydantic==2.5.2
+pydantic-settings==2.1.0
+python-jose[cryptography]==3.3.0
+aiofiles==23.2.1
+typer==0.9.0
+rich==13.7.0
+click==8.1.7
+python-jwt==4.0.0
+cryptography==41.0.7
+httpx==0.25.2 
